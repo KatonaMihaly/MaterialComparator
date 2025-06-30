@@ -1,0 +1,9 @@
+@startuml
+actor User
+rectangle "Material Comparator Web App" {
+    User --> (Select Materials)
+    (Select Materials)  --> (Compare Materials)
+    (Compare Materials) --> (Display Results)
+    (Display Results) --> User
+}
+@enduml

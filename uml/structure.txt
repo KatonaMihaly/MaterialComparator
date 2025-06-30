@@ -1,0 +1,15 @@
+@startuml
+class Material {
+    - name: str
+    - electrical_conductivity: float
+    + __init__(name, electrical_conductivity)
+    + from_dict(data): Material
+}
+class MaterialComparator {
+    - material1: Material
+    - material2: Material
+    + __init__(material1, material2)
+    + compare(): dict
+}
+Material --> MaterialComparator
+@enduml

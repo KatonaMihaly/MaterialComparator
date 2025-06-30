@@ -1,0 +1,5 @@
+[
+    {"name": "Pure Iron", "electrical_conductivity": 10.44},
+    {"name": "1006 Steel", "electrical_conductivity": 5.8},
+    {"name": "M-15 Steel", "electrical_conductivity": 1.9}
+]

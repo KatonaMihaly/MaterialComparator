@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Comparison Result</title></head>
+<body>
+<h2>Comparison between {{ material1 }} and {{ material2 }}</h2>
+<table border="1">
+<tr><th>Property</th><th>{{ material1 }}</th><th>{{ material2 }}</th></tr>
+{% for key, value in result.items() %}
+<tr><td>{{ key }}</td><td>{{ value[0] }}</td><td>{{ value[1] }}</td></tr>
+{% endfor %}
+</table>
+<br>
+<a href="/">← Back</a>
+</body>
+</html>

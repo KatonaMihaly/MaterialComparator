@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Select Materials</title></head>
+<body>
+<h1>Select Two Materials to Compare</h1>
+<form action="/compare" method="POST">
+<h3>Choose Material 1:</h3>
+{% for mat in materials %}
+<label><input type="radio" name="material1" value="{{ mat.name }}">{{ mat.name }}</label><br>
+{% endfor %}
+<h3>Choose Material 2:</h3>
+{% for mat in materials %}
+<label><input type="radio" name="material2" value="{{ mat.name }}">{{ mat.name }}</label><br>
+{% endfor %}
+<br>
+<button type="submit">Compare</button>
+</form>
+</body>
+</html>

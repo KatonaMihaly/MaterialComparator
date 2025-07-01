@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "Material Comparator"
-version = "0.1.0"
+version = "0.1.1"
 description = "A Flask application for material comparison and testing"
 authors = ["Mihaly Katona <katona.mihaly@sze.hu>"]
 license = "MIT"

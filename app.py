@@ -5,6 +5,7 @@ displays them on the index page, and allows the user to compare their properties
 """
 
 import json
+import os
 from dataclasses import dataclass
 from flask import Flask, render_template, request
 
@@ -126,4 +127,5 @@ if __name__ == "__main__":
     Main entry point of the application. Runs the Flask web server
     in debug mode for development purposes.
     """
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 8080))
+    app.run(host="0.0.0.0", port=port, debug=False)

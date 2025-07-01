@@ -4,7 +4,7 @@ from app import app, Material, MaterialComparator
 
 
 class TestMaterialCase(unittest.TestCase):
-    def test_setUp(self):
+    def setUp(self):
         """Set up the test client and example materials."""
         self.app = app.test_client()
         self.app.testing = True
@@ -55,7 +55,7 @@ class TestMaterialCase(unittest.TestCase):
         self.assertIn(b"10.44", response.data)
         self.assertIn(b"5.8", response.data)
 
-    def test_run(self, result=None):
+    def run(self, result=None):
         """Override the run method to show test names and results."""
         test_name = self._testMethodName
         try:

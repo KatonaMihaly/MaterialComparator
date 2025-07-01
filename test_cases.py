@@ -3,7 +3,7 @@ import unittest
 from app import app, Material, MaterialComparator
 
 
-class MaterialTestCase(unittest.TestCase):
+class TestMaterialCase(unittest.TestCase):
     def setUp(self):
         """Set up the test client and example materials."""
         self.app = app.test_client()
@@ -54,18 +54,6 @@ class MaterialTestCase(unittest.TestCase):
         self.assertIn(b"1006 Steel", response.data)
         self.assertIn(b"10.44", response.data)
         self.assertIn(b"5.8", response.data)
-
-    def run(self, result=None):
-        """Override the run method to show test names and results."""
-        test_name = self._testMethodName
-        try:
-            super().run(result)
-            if result.wasSuccessful():
-                print(f"{test_name}: Passed")
-            else:
-                print(f"{test_name}: Failed")
-        except Exception as e:
-            print(f"{test_name}: Failed with Exception: {e}")
 
 if __name__ == "__main__":
     unittest.main()

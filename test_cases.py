@@ -3,8 +3,8 @@ import unittest
 from app import app, Material, MaterialComparator
 
 
-class MaterialTestCase(unittest.TestCase):
-    def setUp(self):
+class TestMaterialCase(unittest.TestCase):
+    def test_setUp(self):
         """Set up the test client and example materials."""
         self.app = app.test_client()
         self.app.testing = True
@@ -55,7 +55,7 @@ class MaterialTestCase(unittest.TestCase):
         self.assertIn(b"10.44", response.data)
         self.assertIn(b"5.8", response.data)
 
-    def run(self, result=None):
+    def test_run(self, result=None):
         """Override the run method to show test names and results."""
         test_name = self._testMethodName
         try:

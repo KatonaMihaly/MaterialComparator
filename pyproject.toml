@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "flask-app"
+name = "Material Comparator"
 version = "0.1.0"
 description = "A Flask application for material comparison and testing"
 authors = ["Mihaly Katona <katona.mihaly@sze.hu>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.13"
+python = "^3.9"
 flask = "^2.3.0"
 requests = "^2.31.0"
 unittest-xml-reporting = "^3.0.0"

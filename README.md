@@ -5,8 +5,6 @@ the material properties of materials from FEMM materials library.
 The final project for Software development tools and methods
 course at CUBIX.
 
-#### [>> DOCUMENTATION << ](https://sevirekon.atlassian.net/wiki/x/O4FRAQ)
-
 In this project I demonstrated the following skills:
 
 ✅ Python Backend Development: Designed and implemented a Flask-based web application using Python 3.9, showcasing structured, clean, object-oriented programming principles.
